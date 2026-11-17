@@ -1,0 +1,40 @@
+/*@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Bold.woff2") format("woff2");
+    font-weight: 700;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Satoshi", sans-serif;
+    background: linear-gradient(to bottom, #C0E211, #A711E2);
+}
+
+#sketch-container {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+}
