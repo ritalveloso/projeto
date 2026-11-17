@@ -1,6 +1,13 @@
 #button {
-    fill: #A711E2;
+    background-color: #A711E2;
     font-family: "Satoshi", sans-serif;
     font-size: 16px;
     color: #F3E8F7;
+    justify-content: center;
+    stroke: none;
+    border-radius: 8px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
