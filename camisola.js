@@ -74,6 +74,7 @@ function setup() {
 
     modelReady = true;
 
+    fill("#F3E8F7");
     statusMessage = "Junta o polegar e o indicador para agarrar a manga.";
 
     console.log("Deteção de mãos iniciada!");
@@ -461,7 +462,7 @@ function drawInterface() {
 
   text("A tua criação", width / 2, 55);
 
-  fill("#F3E8F7");
+  fill("#2E043F");
 
   textStyle(NORMAL);
   textSize(16);
