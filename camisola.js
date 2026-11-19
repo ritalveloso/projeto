@@ -455,14 +455,12 @@ function drawInterface() {
   textFont("Satoshi");
   textAlign(CENTER, CENTER);
 
-  fill("#A711E2");
+  fill("#2E043F");
 
   textStyle(BOLD);
   textSize(24);
 
   text("A tua criação", width / 2, 55);
-
-  fill("#2E043F");
 
   textStyle(NORMAL);
   textSize(16);
@@ -476,7 +474,7 @@ function drawInstructions() {
   textFont("Satoshi");
   textAlign(CENTER, CENTER);
 
-  fill("#2E043F");
+  fill("#F3E8F7");
 
   textStyle(NORMAL);
   textSize(18);

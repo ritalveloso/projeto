@@ -38,3 +38,28 @@ body {
 canvas {
     display: block;
 }
+
+.back-button {
+    position: fixed;
+    top: 55px;
+    left: 4%;
+    z-index: 1000;
+
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.back-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}

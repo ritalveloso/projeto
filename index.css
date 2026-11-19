@@ -1,13 +1,193 @@
-#button {
-    background-color: #A711E2;
+/* TIPOGRAFIA */
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Regular.otf") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Medium.otf") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("fonts/Satoshi-Bold.otf") format("woff2");
+    font-weight: 700;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
     font-family: "Satoshi", sans-serif;
-    font-size: 16px;
-    color: #F3E8F7;
-    justify-content: center;
-    stroke: none;
-    border-radius: 8px;
-    
+    font-family: "Cabinet Grotesk", sans-serif;
+}
+
+/* ECRÃ PRINCIPAL */
+
+.welcome-screen {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow: hidden;
+
+    background: linear-gradient(180deg,
+            #C2EB00 0%,
+            #B1AD4B 35%,
+            #A4778C 65%,
+            #8700AF 100%);
+
+    color: #FBEAFF;
+}
+
+/* CONTEÚDO CENTRAL */
+
+.welcome-content {
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    text-align: center;
+}
+
+.welcome-content h1 {
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-size: clamp(48px, 8.5vw, 90px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.welcome-content h2 {
+    font-family: "Cabinet Grotesk", sans-serif;
+    margin-top: 12px;
+    font-size: clamp(28px, 4.5vw, 44px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-family: "Satoshi", sans-serif;
+    margin-top: 42px;
+    font-size: clamp(18px, 3vw, 30px);
+    font-weight: 700;
+}
+
+/* BOTÃO CENTRAL */
+.start-button {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 38px;
+
+    border: 2px solid #FBEAFF;
+    border-radius: 50px;
+
+    color: #FBEAFF;
+    background: transparent;
+
+    font-family: "Satoshi", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.start-button:hover {
+    background: #FBEAFF;
+    color: #8700AF;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.start-button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
+/* INTERAÇÃO INFERIOR */
+
+.interaction-area {
+    position: absolute;
+    left: 50%;
+    bottom: 5.5%;
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    text-align: center;
+}
+
+.interaction-area p {
+    font-family: "Satoshi", sans-serif;
+    font-size: clamp(16px, 2.3vw, 23px);
+    font-weight: 700;
+}
+
+/* CÍRCULO */
+
+/* CÍRCULO DE PROGRESSO */
+
+.progress-container {
+    width: 100px;
+    height: 100px;
+}
+
+.progress-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transform: rotate(-90deg);
+}
+
+/* Contorno de fundo */
+.progress-background {
+    fill: none;
+    stroke: rgba(255, 235, 255, 0.45);
+    stroke-width: 4;
+}
+
+/* Contorno que acompanha a proximidade */
+.progress-foreground {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 4;
+    stroke-linecap: round;
+
+    stroke-dasharray: 276.46;
+    stroke-dashoffset: 276.46;
+
+    transition: none;
 }
