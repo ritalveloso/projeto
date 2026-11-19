@@ -10,7 +10,7 @@ import {
 
 // Proporção do rosto relativamente à largura da câmara
 const FACE_FAR = 0.10;
-const FACE_NEAR = 0.28;
+const FACE_NEAR = 0.30;
 
 // Suavidade da animação
 const SMOOTHING = 0.07;
